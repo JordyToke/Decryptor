@@ -19,7 +19,7 @@
   </h1>
   <form id="cipher-form" action="" onchange="handleInput(event)">
     <label for="original-text">Original Text
-      <textarea name="original-text" id="original-text" cols="80" rows="10" spellcheck="false" onchange="handleInput(event)"></textarea>
+      <textarea name="original-text" id="original-text" cols="80" rows="10" spellcheck="false" oninput="handleInput(event)"></textarea>
     </label>
     <label for="auto-cipher">Auto-Cipher
       <input type="checkbox" name="auto-cipher" id="auto-cipher">
