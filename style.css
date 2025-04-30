@@ -93,7 +93,6 @@ label[for=ciphered-text] {
   background-color: var(--bg-acc);
   padding: 1rem;
   border-radius: 0.25rem;
-  max-width: 80ch;
   text-align: left;
 }
 
