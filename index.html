@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decryptor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="decrypter.js" defer></script>
+  <link rel="shortcut icon" href="cipherWheel.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <h1>
+    <img class="logo" src="cipherWheel.svg" alt="">
+    Cipher Encoder / Decoder
+  </h1>
+  <form id="cipher-form" action="" onchange="handleInput(event)">
+    <label for="original-text">Original Text
+      <textarea name="original-text" id="original-text" cols="80" rows="10" spellcheck="false" onchange="handleInput(event)"></textarea>
+    </label>
+    <label for="auto-cipher">Auto-Cipher
+      <input type="checkbox" name="auto-cipher" id="auto-cipher">
+    </label>
+    <label for="cipher-type">Cipher Selector
+      <select name="cipher-type" id="cipher-type" onchange="handleInput(event)">
+        <option value="">Select Cipher</option>
+        <option value="caesar">Caesar Cipher</option>
+      </select>
+    </label>
+  </form>
+  <input id="cipher-submit" type="submit" form="cipher-form" onclick="handleSubmit(event)">
+  <label for="ciphered-text">Result</label>
+    <hr />
+    <p id="ciphered-text"></p>
+  
+</body>
+</html>
