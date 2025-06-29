@@ -27,8 +27,9 @@ label {
   text-transform: capitalize;
 }
 
-input, textarea, select {
+input, textarea, select, output {
   font-family: var(--fonts);
+  font-size: 14px;
   color: var(--font-color);
   background-color: var(--bg-acc);
   scrollbar-color: var(--bg-color) var(--bg-acc);
@@ -36,6 +37,7 @@ input, textarea, select {
   border: none;
   resize: none;
   border-radius: 0.25rem;
+  padding: 0.2rem;
 }
 
 input[type="submit"], input[type="button"] {
@@ -87,13 +89,6 @@ label[for=ciphered-text] {
   display: flex;
   justify-content: space-around;
   margin: 2rem 0 0;
-}
-
-#ciphered-text {
-  background-color: var(--bg-acc);
-  padding: 1rem;
-  border-radius: 0.25rem;
-  text-align: left;
 }
 
 *:focus-visible {
